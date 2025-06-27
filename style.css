@@ -1,21 +1,13 @@
 /*version mobile first*/
 #com {
     color: red;
-    font-size: 21px;
+    font-size: 28px;
     font-weight: bold;
 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-}
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,7 +28,18 @@
     font-size: 15px;
 }
 
-#fushia {
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-size: 19px;
+}
+
+section{
+    margin-bottom: 60px;
+}
+
+.fleur {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -69,4 +72,19 @@
   body {
     font-size: 20px;
    }
+
+ #com {
+        font-size: 40px;
+    }
+    
+    header {
+        font-size: 28px;
+    }
+    .nav-list {
+        font-size: 18px;
+    }
+    .fleur {
+        width: 400px;
+        height: 400px;
+    }
 }
