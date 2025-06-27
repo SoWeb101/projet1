@@ -1,4 +1,12 @@
 /*version mobile first*/
+
+/* Fait du body une boîte flexible verticale */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
 #com {
     color: red;
     font-size: 28px;
@@ -21,7 +29,7 @@ header {
 .nav-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -59,11 +67,51 @@ section{
     transform: scale(0.9);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* Tablette et plus */
 @media (min-width: 768px) {
   body {
     font-size: 18px;
     background: lightgray;
+  }
+
+   .footer-content {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    margin-top: 0;
   }
 }
 
