@@ -1,6 +1,7 @@
+/*version mobile first*/
 #com {
     color: red;
-    font-size: 50px;
+    font-size: 21px;
     font-weight: bold;
 
 }
@@ -32,8 +33,8 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    font-size: 15px;
 }
-    
 
 #fushia {
     width: 300px;
@@ -45,4 +46,27 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+#fushia:hover {
+    transform: scale(1.1);
+}
+
+#fushia:active {
+    transform: scale(0.9);
+}
+
+/* Tablette et plus */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    background: lightgray;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+   }
 }
